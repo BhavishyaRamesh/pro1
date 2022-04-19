@@ -1,0 +1,60 @@
+  329  git init
+  330  touch a
+  331  git add .
+  332  git commit -m "a"
+  333  touch b
+  334  git add .
+  335  git commit -m "b"
+  336  git reset head~1
+  337  git status
+  338  git log --oneline
+  339  git add .
+  340  git commit -m "b."
+  341  git log --oneline
+  342  git reset --soft head~1
+  343  git log --oneline
+  344  git status
+  345  git commit -m "b1"
+  346  git log --oneline
+  347  git reset --hard head~1
+  348  git log --oneline
+  349  git status
+  350  git clone https://github.com/BhavishyaRamesh/pro1.git
+  351  ls
+  352  cd pro1
+  353  ls
+  354  touch b
+  355  git add .
+  356  git commit -m "b2"
+  357  git push origin master
+  358  git log --oneline
+  359  git revert ca2c9e6
+  360  git log --oneline
+  361  ls
+  362  git revert d9c41ad
+  363  touch c
+  364  git add .
+  365  git commit -m "c"
+  366  git push origin master
+  367  git log --oneline
+  368  git revert a0e0163
+  369  git log --oneline
+  370  ls
+  371  ls
+  372  touch d
+  373  git add .
+  374  git commit -m "d"
+  375  git push origin master
+  376  git status
+  377  git pull origin master
+  378  cd ..
+  379  git pull origin master
+  380  git clone https://github.com/BhavishyaRamesh/pro1.git
+  381  ls
+  382  cd pro1
+  383  ls
+  384  git log --oneline
+  385  git revert 2a82740
+  386  git log --oneline
+  387  ls
+  388  git push origin master
